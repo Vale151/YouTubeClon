@@ -13,6 +13,22 @@
 		CE620453284D1478008606B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE620451284D1478008606B3 /* Main.storyboard */; };
 		CE620455284D147C008606B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE620454284D147C008606B3 /* Assets.xcassets */; };
 		CE620458284D147C008606B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE620456284D147C008606B3 /* LaunchScreen.storyboard */; };
+		CE620461284D1C1A008606B3 /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE620460284D1C1A008606B3 /* PlaylistModel.swift */; };
+		CE620463284D259A008606B3 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE620462284D259A008606B3 /* VideoModel.swift */; };
+		CE62046B284D2DC7008606B3 /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62046A284D2DC7008606B3 /* ChannelModel.swift */; };
+		CE62046D284D2DEA008606B3 /* PlaylistItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62046C284D2DEA008606B3 /* PlaylistItemsModel.swift */; };
+		CE620470284D32B4008606B3 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62046F284D32B4008606B3 /* RootPageViewController.swift */; };
+		CE620472284D32D0008606B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE620471284D32D0008606B3 /* MainViewController.swift */; };
+		CE62047A284D344B008606B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE620478284D344B008606B3 /* HomeViewController.swift */; };
+		CE62047B284D344B008606B3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE620479284D344B008606B3 /* HomeViewController.xib */; };
+		CE62047E284D3475008606B3 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62047C284D3474008606B3 /* VideosViewController.swift */; };
+		CE62047F284D3475008606B3 /* VideosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE62047D284D3474008606B3 /* VideosViewController.xib */; };
+		CE620482284D348F008606B3 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE620480284D348F008606B3 /* PlaylistViewController.swift */; };
+		CE620483284D348F008606B3 /* PlaylistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE620481284D348F008606B3 /* PlaylistViewController.xib */; };
+		CE620486284D34A8008606B3 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE620484284D34A8008606B3 /* ChannelViewController.swift */; };
+		CE620487284D34A8008606B3 /* ChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE620485284D34A8008606B3 /* ChannelViewController.xib */; };
+		CE62048A284D34B8008606B3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE620488284D34B8008606B3 /* AboutViewController.swift */; };
+		CE62048B284D34B8008606B3 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE620489284D34B8008606B3 /* AboutViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +40,22 @@
 		CE620454284D147C008606B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE620457284D147C008606B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE620459284D147C008606B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE620460284D1C1A008606B3 /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
+		CE620462284D259A008606B3 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		CE62046A284D2DC7008606B3 /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
+		CE62046C284D2DEA008606B3 /* PlaylistItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemsModel.swift; sourceTree = "<group>"; };
+		CE62046F284D32B4008606B3 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
+		CE620471284D32D0008606B3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE620478284D344B008606B3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE620479284D344B008606B3 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CE62047C284D3474008606B3 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		CE62047D284D3474008606B3 /* VideosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideosViewController.xib; sourceTree = "<group>"; };
+		CE620480284D348F008606B3 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		CE620481284D348F008606B3 /* PlaylistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistViewController.xib; sourceTree = "<group>"; };
+		CE620484284D34A8008606B3 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		CE620485284D34A8008606B3 /* ChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelViewController.xib; sourceTree = "<group>"; };
+		CE620488284D34B8008606B3 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CE620489284D34B8008606B3 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,13 @@
 		CE62044A284D1478008606B3 /* YouTubeClon */ = {
 			isa = PBXGroup;
 			children = (
+				CE620477284D341E008606B3 /* About */,
+				CE620476284D3412008606B3 /* Channels */,
+				CE620475284D33FF008606B3 /* Playlists */,
+				CE620474284D33F2008606B3 /* Videos */,
+				CE620473284D33E6008606B3 /* Home */,
+				CE62046E284D3273008606B3 /* Main */,
+				CE62045F284D1BF5008606B3 /* Model */,
 				CE62044B284D1478008606B3 /* AppDelegate.swift */,
 				CE62044D284D1478008606B3 /* SceneDelegate.swift */,
 				CE62044F284D1478008606B3 /* ViewController.swift */,
@@ -65,6 +104,71 @@
 				CE620459284D147C008606B3 /* Info.plist */,
 			);
 			path = YouTubeClon;
+			sourceTree = "<group>";
+		};
+		CE62045F284D1BF5008606B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE620460284D1C1A008606B3 /* PlaylistModel.swift */,
+				CE620462284D259A008606B3 /* VideoModel.swift */,
+				CE62046A284D2DC7008606B3 /* ChannelModel.swift */,
+				CE62046C284D2DEA008606B3 /* PlaylistItemsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE62046E284D3273008606B3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CE62046F284D32B4008606B3 /* RootPageViewController.swift */,
+				CE620471284D32D0008606B3 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CE620473284D33E6008606B3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE620478284D344B008606B3 /* HomeViewController.swift */,
+				CE620479284D344B008606B3 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE620474284D33F2008606B3 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				CE62047C284D3474008606B3 /* VideosViewController.swift */,
+				CE62047D284D3474008606B3 /* VideosViewController.xib */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		CE620475284D33FF008606B3 /* Playlists */ = {
+			isa = PBXGroup;
+			children = (
+				CE620480284D348F008606B3 /* PlaylistViewController.swift */,
+				CE620481284D348F008606B3 /* PlaylistViewController.xib */,
+			);
+			path = Playlists;
+			sourceTree = "<group>";
+		};
+		CE620476284D3412008606B3 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				CE620484284D34A8008606B3 /* ChannelViewController.swift */,
+				CE620485284D34A8008606B3 /* ChannelViewController.xib */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		CE620477284D341E008606B3 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				CE620488284D34B8008606B3 /* AboutViewController.swift */,
+				CE620489284D34B8008606B3 /* AboutViewController.xib */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +229,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE620483284D348F008606B3 /* PlaylistViewController.xib in Resources */,
 				CE620458284D147C008606B3 /* LaunchScreen.storyboard in Resources */,
+				CE62048B284D34B8008606B3 /* AboutViewController.xib in Resources */,
 				CE620455284D147C008606B3 /* Assets.xcassets in Resources */,
+				CE62047F284D3475008606B3 /* VideosViewController.xib in Resources */,
 				CE620453284D1478008606B3 /* Main.storyboard in Resources */,
+				CE62047B284D344B008606B3 /* HomeViewController.xib in Resources */,
+				CE620487284D34A8008606B3 /* ChannelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +247,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE62046D284D2DEA008606B3 /* PlaylistItemsModel.swift in Sources */,
 				CE620450284D1478008606B3 /* ViewController.swift in Sources */,
+				CE62047E284D3475008606B3 /* VideosViewController.swift in Sources */,
+				CE620461284D1C1A008606B3 /* PlaylistModel.swift in Sources */,
 				CE62044C284D1478008606B3 /* AppDelegate.swift in Sources */,
+				CE620486284D34A8008606B3 /* ChannelViewController.swift in Sources */,
+				CE620463284D259A008606B3 /* VideoModel.swift in Sources */,
+				CE62047A284D344B008606B3 /* HomeViewController.swift in Sources */,
 				CE62044E284D1478008606B3 /* SceneDelegate.swift in Sources */,
+				CE620482284D348F008606B3 /* PlaylistViewController.swift in Sources */,
+				CE62048A284D34B8008606B3 /* AboutViewController.swift in Sources */,
+				CE620472284D32D0008606B3 /* MainViewController.swift in Sources */,
+				CE62046B284D2DC7008606B3 /* ChannelModel.swift in Sources */,
+				CE620470284D32B4008606B3 /* RootPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
