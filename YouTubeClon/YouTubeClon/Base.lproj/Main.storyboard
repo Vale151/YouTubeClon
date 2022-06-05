@@ -24,7 +24,7 @@
                             </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="grayColor"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bPF-Wl-zXN" secondAttribute="trailing" id="CB0-xj-IH0"/>
                             <constraint firstItem="bPF-Wl-zXN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dA9-BF-ZJ3"/>
@@ -47,8 +47,8 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="grayColor">
-            <color red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
