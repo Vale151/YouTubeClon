@@ -41,7 +41,7 @@ struct PlaylistModel: Decodable {
                 struct Medium: Decodable {
                     let url: String
                     let width: Int
-                    let heigh: Int
+                    let height: Int
                 }
             }
             

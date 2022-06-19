@@ -21,7 +21,7 @@ class HomePresenter {
         self.delegate = delegate
     }
     
-    func getVideos() async {
+    func getHomeObjects() async {
         objectList.removeAll()//una vez consultado se remueve todo
         
         //ACÅ las llamadas se hacen tipo cascada y eso no es performante. Se hace una llamada por cada uno. Lo ideal seria agarrar todos los llamados y agruparlos en un solo llamado.
