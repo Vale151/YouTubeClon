@@ -17,10 +17,17 @@ class HomePresenter {
     private var objectList: [[Any]] = []
     
     init(delegate: HomeViewProtocol, provider: HomeProviderProtocol = HomeProvider()) {
-        self.provider = provider
+        self.provider = provider //si no es true toma este
         self.delegate = delegate
+        
+        #if DEBUG
+        if MockManager.shared.runAppWithMock {
+            self.provider = HomeProviderMock()
+        }
+        #endif
     }
     
+    @MainActor
     func getHomeObjects() async {
         objectList.removeAll()//una vez consultado se remueve todo
         

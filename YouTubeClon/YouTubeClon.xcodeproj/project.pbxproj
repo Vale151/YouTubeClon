@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4D16C12860DECB005CC583 /* HomeProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D16C02860DECB005CC583 /* HomeProviderMock.swift */; };
+		CE4D16C42860DF5C005CC583 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D16C32860DF5C005CC583 /* Utils.swift */; };
+		CE4D16C62860E286005CC583 /* Channel.json in Resources */ = {isa = PBXBuildFile; fileRef = CE4D16C52860E286005CC583 /* Channel.json */; };
+		CE4D16C82860E2A3005CC583 /* Playlists.json in Resources */ = {isa = PBXBuildFile; fileRef = CE4D16C72860E2A3005CC583 /* Playlists.json */; };
+		CE4D16CA2860E2BD005CC583 /* PlaylistItems.json in Resources */ = {isa = PBXBuildFile; fileRef = CE4D16C92860E2BD005CC583 /* PlaylistItems.json */; };
+		CE4D16CC2860E2F2005CC583 /* SearchVideos.json in Resources */ = {isa = PBXBuildFile; fileRef = CE4D16CB2860E2F2005CC583 /* SearchVideos.json */; };
+		CE4D16CE2860E4DD005CC583 /* VideoOnlyOne.json in Resources */ = {isa = PBXBuildFile; fileRef = CE4D16CD2860E4DD005CC583 /* VideoOnlyOne.json */; };
+		CE4D16D22860EB5B005CC583 /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D16D12860EB5B005CC583 /* MockManager.swift */; };
 		CE62044C284D1478008606B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62044B284D1478008606B3 /* AppDelegate.swift */; };
 		CE62044E284D1478008606B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62044D284D1478008606B3 /* SceneDelegate.swift */; };
 		CE620450284D1478008606B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62044F284D1478008606B3 /* ViewController.swift */; };
@@ -38,6 +46,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE4D16C02860DECB005CC583 /* HomeProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProviderMock.swift; sourceTree = "<group>"; };
+		CE4D16C32860DF5C005CC583 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CE4D16C52860E286005CC583 /* Channel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Channel.json; sourceTree = "<group>"; };
+		CE4D16C72860E2A3005CC583 /* Playlists.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Playlists.json; sourceTree = "<group>"; };
+		CE4D16C92860E2BD005CC583 /* PlaylistItems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PlaylistItems.json; sourceTree = "<group>"; };
+		CE4D16CB2860E2F2005CC583 /* SearchVideos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchVideos.json; sourceTree = "<group>"; };
+		CE4D16CD2860E4DD005CC583 /* VideoOnlyOne.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VideoOnlyOne.json; sourceTree = "<group>"; };
+		CE4D16D12860EB5B005CC583 /* MockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
 		CE620448284D1478008606B3 /* YouTubeClon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeClon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE62044B284D1478008606B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE62044D284D1478008606B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +97,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE4D16C22860DF40005CC583 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				CE4D16C52860E286005CC583 /* Channel.json */,
+				CE4D16C72860E2A3005CC583 /* Playlists.json */,
+				CE4D16C92860E2BD005CC583 /* PlaylistItems.json */,
+				CE4D16CB2860E2F2005CC583 /* SearchVideos.json */,
+				CE4D16CD2860E4DD005CC583 /* VideoOnlyOne.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		CE62043F284D1478008606B3 = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +227,10 @@
 		CE620493284D51F2008606B3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CE4D16C22860DF40005CC583 /* Mock */,
 				CE620494284D5220008606B3 /* Constants.swift */,
+				CE4D16C32860DF5C005CC583 /* Utils.swift */,
+				CE4D16D12860EB5B005CC583 /* MockManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -233,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				CE62049A284D564F008606B3 /* HomeProvider.swift */,
+				CE4D16C02860DECB005CC583 /* HomeProviderMock.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -296,13 +328,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE620483284D348F008606B3 /* PlaylistViewController.xib in Resources */,
+				CE4D16CC2860E2F2005CC583 /* SearchVideos.json in Resources */,
+				CE4D16C62860E286005CC583 /* Channel.json in Resources */,
 				CE620458284D147C008606B3 /* LaunchScreen.storyboard in Resources */,
+				CE4D16CA2860E2BD005CC583 /* PlaylistItems.json in Resources */,
 				CE62048B284D34B8008606B3 /* AboutViewController.xib in Resources */,
+				CE4D16CE2860E4DD005CC583 /* VideoOnlyOne.json in Resources */,
 				CE620455284D147C008606B3 /* Assets.xcassets in Resources */,
 				CE62047F284D3475008606B3 /* VideosViewController.xib in Resources */,
 				CE620453284D1478008606B3 /* Main.storyboard in Resources */,
 				CE62047B284D344B008606B3 /* HomeViewController.xib in Resources */,
 				CE620487284D34A8008606B3 /* ChannelViewController.xib in Resources */,
+				CE4D16C82860E2A3005CC583 /* Playlists.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,9 +356,12 @@
 				CE62049D284D5A45008606B3 /* HomePresenter.swift in Sources */,
 				CE62047E284D3475008606B3 /* VideosViewController.swift in Sources */,
 				CE620461284D1C1A008606B3 /* PlaylistModel.swift in Sources */,
+				CE4D16C12860DECB005CC583 /* HomeProviderMock.swift in Sources */,
+				CE4D16C42860DF5C005CC583 /* Utils.swift in Sources */,
 				CE62044C284D1478008606B3 /* AppDelegate.swift in Sources */,
 				CE620492284D4ED6008606B3 /* RequestModel.swift in Sources */,
 				CE620486284D34A8008606B3 /* ChannelViewController.swift in Sources */,
+				CE4D16D22860EB5B005CC583 /* MockManager.swift in Sources */,
 				CE620463284D259A008606B3 /* VideoModel.swift in Sources */,
 				CE62047A284D344B008606B3 /* HomeViewController.swift in Sources */,
 				CE62044E284D1478008606B3 /* SceneDelegate.swift in Sources */,
