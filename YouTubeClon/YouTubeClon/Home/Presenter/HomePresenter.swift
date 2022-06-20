@@ -24,21 +24,44 @@ class HomePresenter {
     func getHomeObjects() async {
         objectList.removeAll()//una vez consultado se remueve todo
         
-        //ACÅ las llamadas se hacen tipo cascada y eso no es performante. Se hace una llamada por cada uno. Lo ideal seria agarrar todos los llamados y agruparlos en un solo llamado.
+        //ACA vamos a hacer una cargar y dejarlos listos para hacer un unico llamado
+        
+        async let videos = try await provider.getVideos(searchString: "", channelId: Constants.channelId).items
+        async let channels = try await provider.getChannel(channelId: Constants.channelId).items
+        async let playlist = try await provider.getPlaylists(channelId: Constants.channelId).items
+        
+    
+        
         do {
-            let videos = try await provider.getVideos(searchString: "", channelId: Constants.channelId).items
-            let channels = try await provider.getChannel(channelId: Constants.channelId).items
-            let playlist = try await provider.getPlaylists(channelId: Constants.channelId).items
+            //aca se agrupan las llamadas
+            let (responseChannel, responsePlaylist, responseVideos) = await (try channels, try playlist, try videos)
+            //index 0
+            objectList.append(responseChannel)
             
-            let playlistItems = try await provider.getPlaylistsItems(playlistId: playlist.first?.id ?? "").items
+            if let playlistId = responsePlaylist.first?.id, let playlistItems = await getPlaylistItems(playlistId: playlistId) {
+                //index 1
+                objectList.append(playlistItems.items)
+            }
+            //index 2
+            objectList.append(responseVideos)
+            //index 3
+            objectList.append(responsePlaylist)
             
-            objectList.append(channels)
-            objectList.append(playlistItems)
-            objectList.append(videos)
-            objectList.append(playlist)
+            delegate?.getData(list: objectList) //esto le pasa al HomeVC la list de objetos
             
         } catch {
             print(error)
+        }
+      
+    }
+    
+    func getPlaylistItems(playlistId: String) async -> PlaylistItemsModel? {
+        do{
+            let playlistItems = try await provider.getPlaylistsItems(playlistId: playlistId)
+            return playlistItems
+        } catch {
+            print("error", error)
+            return nil
         }
       
     }
